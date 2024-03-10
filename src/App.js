@@ -3,8 +3,8 @@ import Navbar from "./components/Navbar";
 import { Grid } from "@mui/material";
 import { Container } from "@mui/system";
 import SliderSelect from "./components/SliderSelect";
-// import TenureSelect from "./components/TenureSelect";
-// import Result from "./components/Result";
+import TenureSelect from "./components/TenureSelect";
+import Result from "./components/Result";
 
 function App() {
   const [data, setData] = useState({
@@ -22,10 +22,10 @@ function App() {
         <Grid container spacing={5} alignItems='center'>
           <Grid item xs={12} md={6}>
             <SliderSelect data={data} setData={setData} />
-            {/* <TenureSelect data={data} setData={setData}/> */}
+            <TenureSelect data={data} setData={setData}/>
           </Grid>
           <Grid item xs={12} md={6}>
-            {/* <Result /> */}
+            <Result data={data}/>
           </Grid>
         </Grid>
       </Container>
